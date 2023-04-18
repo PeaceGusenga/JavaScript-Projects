@@ -48,3 +48,10 @@ body{
     line-height: 53px;
     color: #707070;
 }
+.wrapper .pass-indicator{
+    width: 100%;
+    height: 4px;
+    background: #dfdfdf;
+    margin-top: 0.72rem;
+    border-radius: 25px;
+}
