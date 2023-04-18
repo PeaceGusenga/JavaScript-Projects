@@ -38,3 +38,7 @@ body{
     border: 1px solid #aaa;
     padding: 0 2.85rem 0 1rem;
 }
+.inputbox span{
+    position: absolute;
+    right: 13px;
+}
