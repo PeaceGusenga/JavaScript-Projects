@@ -51,7 +51,17 @@ body{
 .wrapper .pass-indicator{
     width: 100%;
     height: 4px;
+    position: relative;
     background: #dfdfdf;
     margin-top: 0.72rem;
     border-radius: 25px;
+}
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #f1c80b;
+
 }
