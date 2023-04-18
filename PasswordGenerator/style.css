@@ -18,3 +18,12 @@ body{
     background: #fff;
     border-radius: 8px;
 }
+.container h2{
+    font-weight: 600;
+    font-size: 1.31rem;
+    padding: 1rem 1.175rem;
+    border-bottom: 1px solid #d4dbe5;
+}
+.wrapper{
+    margin: 1.25rem 1.75rem;
+}
