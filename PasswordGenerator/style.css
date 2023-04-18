@@ -27,3 +27,14 @@ body{
 .wrapper{
     margin: 1.25rem 1.75rem;
 }
+.input-box input{
+    width: 100%;
+    height: 53px;
+    color: #000;
+    background: none;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    padding: 0 2.85rem 0 1rem;
+}
