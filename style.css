@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #E3F2FD;
+}
+
+/*
+ediit main error message
+*/
+.popup {
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    visibility: hidden;
+    width: 490px;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    background: #fff;
+    display: flex;
+    border-top: 3px solid #EA4D67;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 25px rgba(52, 87, 220, 0.1);
+    transition: all 0.25s ease;
+}
+
+/*
+controls visiblity
+*/
+
+.popup .show {
+    top: 0;
+    visibility: visible;
+}
+
+/*
+edits online status window
+*/
+.popup .online {
+    border-color: #2ecc71;
+}
+
+/*
+edit Wifi icon
+*/
+.popup .icon i {
+     width: 40px;
+     height: 40px;
+     display: flex;
+     color: #FFF;
+     margin-right: 15px;
+     font-size: 1.2rem;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: #EA4D67;
+}
+
+.popup .online .icon i {
+    background: #2ecc71;
+}
+/*
+edit page Title
+*/
+
+.popup .title {
+    font-size: 1.2rem;
+}
+
+/*
+edit error description
+*/
+.popup .desc {
+    color: #474747;
+    margin: 3px 0 10px;
+    font-size: 1.04rem;
+    
+}
+
+/*
+edit reconnet button
+*/
+
+.popup .reconnect {
+    border: none;
+    outline: none;
+    cursor: pointer; /* change cursor to a pointer when hovering over button*/
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 9px 15px;
+    border-radius: 4px; 
+    background: #5372F0;
+}
+
+.popup .online .reconnect {
+    background: #bfbfbf;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 550px) {
+    .popup {
+        width: 100%;
+        padding: 10px 15px 17px;
+    }
+}
