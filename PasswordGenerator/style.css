@@ -27,6 +27,9 @@ body{
 .wrapper{
     margin: 1.25rem 1.75rem;
 }
+.wrapper .input-box{
+    position: relative;
+}
 .input-box input{
     width: 100%;
     height: 53px;
@@ -38,7 +41,10 @@ body{
     border: 1px solid #aaa;
     padding: 0 2.85rem 0 1rem;
 }
-.inputbox span{
+.input-box span{
     position: absolute;
     right: 13px;
+    cursor: pointer;
+    line-height: 53px;
+    color: #707070;
 }
