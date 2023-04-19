@@ -1,10 +1,8 @@
 const lengthSlider = document.querySelector(".pass-length input"),
 options =  document.querySelectorAll(".option input"),
+passwordInput = document.querySelector(".input-box input"),
+passIndicator = document.querySelector("pass-indicator"),
 generateBtn = document.querySelector(".generate-btn");
-
-const updateSlider = () => {
-    document.querySelector(".pass-length span").innerText = lengthSlider.value;
-}
 
 // letters, numbers and symbols used to generate passwords
 const characters = {
@@ -51,8 +49,16 @@ const generatePassword = () => {
         } else { // else add random character to randomPassword
             randomPassword += randomChar;
         }
+
+        passwordInput.value = randomPassword; // output random password to input box
     }
+
 }
+const updateSlider = () => {
+    document.querySelector(".pass-length span").innerText = lengthSlider.value;
+    generatePassword();
+}
+
 updateSlider();
 
 lengthSlider.addEventListener("input", updateSlider);
