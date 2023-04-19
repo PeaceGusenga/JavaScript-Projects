@@ -1,5 +1,6 @@
 const lengthSlider = document.querySelector(".pass-length input"),
 options =  document.querySelectorAll(".option input"),
+copyIcon =  document.querySelector(".input-box span"),
 passwordInput = document.querySelector(".input-box input"),
 passIndicator = document.querySelector(".pass-indicator"),
 generateBtn = document.querySelector(".generate-btn");
@@ -68,5 +69,15 @@ const updateSlider = () => {
 
 updateSlider();
 
+const copyPassword = () => {
+    //writeText() writes the passed text to the system clipboard
+    navigator.clipboard.writeText(passwordInput.value);
+    copyIcon.innerText = "check";
+    setTimeout(() =>{
+        copyIcon.innerText = "copy_all"; // after 1500ms. change icon back to copy
+    }, 1500);
+}
+
 lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
+copyIcon.addEventListener("click", copyPassword);
