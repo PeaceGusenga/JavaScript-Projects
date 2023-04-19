@@ -71,10 +71,10 @@ updateSlider();
 
 const copyPassword = () => {
     //writeText() writes the passed text to the system clipboard
-    navigator.clipboard.writeText(passwordInput.value);
-    copyIcon.innerText = "check";
+    navigator.clipboard.writeText(passwordInput.value); //copy random password
+    copyIcon.innerText = "check"; // change icon to check mark
     setTimeout(() =>{
-        copyIcon.innerText = "copy_all"; // after 1500ms. change icon back to copy
+        copyIcon.innerText = "copy_all"; // after 1500ms. change icon back to copy icon
     }, 1500);
 }
 
