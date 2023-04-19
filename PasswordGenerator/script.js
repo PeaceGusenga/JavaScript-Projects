@@ -1,7 +1,7 @@
-const lengthSlider = docment.querySelector(".pass-length input");
+const lengthSlider = document.querySelector(".pass-length input");
 
 const updateSlider = () => {
-    document.querySelectctor(".pass-length span").innerText = lengthSlider.value;
+    document.querySelector(".pass-length span").innerText = lengthSlider.value;
 }
 
 lengthSlider.addEventListener("input", updateSlider);
